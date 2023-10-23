@@ -24,7 +24,6 @@ body{
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto auto;
     background-color: whitesmoke;
-
 }
 
 .flex-conteiner{
@@ -36,19 +35,74 @@ body{
 }
 
 .cajas{
-    width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 16px;
+    transition: all;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+    width: 300px;
     height: 150px;
     margin: 5px;
-    flex-grow: 1;
     text-align: justify;
 }
 
+.box{
+    display: inline-block;
+    transition: all;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+    width: 250px;
+    text-align: justify;
+}
+
+/*
+width: 250px;
+height: 150px;
+margin: 5px;
+flex-grow: 1;
+text-align: justify;
+padding: 50px 30px;
+transition: all ease-in-out 0.3s;
+----------------
+position:static;
+display:inline-block;
+text-decoration:none;
+width:100px;
+height:100px;
+margin:10px;
+padding:10px;
+border:1px solid #666;
+background-color:#BB00BB;
+color:#ffffff;
+
+*/
 
 .caja{
     border: 1px solid black;
     margin: auto;
     height: auto;
 }
+
+.cajita{
+    display: inline-block;
+    background: #fff;
+    color: #3fa3aa;
+    padding: 16px;
+
+    transition: all;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+}
+
+.cajita:hover {
+    background: #fff;
+    color: darkred;
+    padding: 32px;
+    border: 1px solid darkred;
+    transform: scale(5deg);
+}
+
 
 ul li{
     list-style: none;
@@ -66,7 +120,34 @@ h4{
     margin: 20px;
     text-align: center;
 }
+
+#carouselExampleInterval {
+    background: linear-gradient(90deg, rgba(68,195,235,1) 35%, rgba(84,130,253,1) 100%);
+}
+
+.carousel-inner {
+    right: 25%;
+    bottom: 20px;
+    left: 25%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.row {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+
 footer{
     color: white;
     font-size: medium;
-    background: linear-gradient(90deg, rgba(68,195,235,1) 35%, rgba(84,130,253,1) 100%);}
+    background: linear-gradient(90deg, rgba(68,195,235,1) 35%, rgba(84,130,253,1) 100%);
+    padding: 90px 0
+}
+
+.collapse {
+    height: 70px;
+}
